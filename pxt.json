@@ -17,6 +17,7 @@
         "main.ts",
         "ShootHandler.ts",
         "StartScreen.ts",
+        "CreateHero.ts",
         "README.md",
         "assets.json",
         "tilemap.g.jres",
