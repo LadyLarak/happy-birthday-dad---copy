@@ -141,7 +141,7 @@ function Level1Screen () {
         1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
         `)
     tiles.setCurrentTilemap(tilemap`Level1`)
-    ShootDirection = 1
+    
     MyPlayer()
     TheBirds()
 }
@@ -1305,9 +1305,7 @@ function CreatShark1 () {
     statusbar5 = statusbars.create(20, 4, StatusBarKind.EnemyHealth)
     statusbar5.attachToSprite(Shark1, 0, 0)
 }
-controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
-    ShootDirection = 2
-})
+
 scene.onOverlapTile(SpriteKind.Player, myTiles.tile6, function (sprite, location) {
     Level2Screen()
 })
@@ -1422,9 +1420,7 @@ scene.onOverlapTile(SpriteKind.Player, sprites.swamp.swampTile13, function (spri
     music.stopAllSounds()
     info.setLife(0)
 })
-controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
-    ShootDirection = 1
-})
+
 sprites.onOverlap(SpriteKind.Player, SpriteKind.AnnoyingMuch, function (sprite, otherSprite) {
     info.setLife(0)
 })
