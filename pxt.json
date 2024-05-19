@@ -14,6 +14,7 @@
     },
     "files": [
         "main.blocks",
+        "img/cursor.ts",
         "main.ts",
         "ShootHandler.ts",
         "StartScreen.ts",

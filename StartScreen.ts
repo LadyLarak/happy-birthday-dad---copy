@@ -160,24 +160,7 @@ function StartScreen() {
         ffffffffffff3ffffffbfbffff333ffff3ffffffbfffffbfffffffff3fffff
         ffffffffffffffffffffbffffff3ffffffffffffffffffffffffffffffffff
         `, SpriteKind.NPC);
-    Cursor = sprites.create(img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        f f f f f f f f f f f f f . . . 
-        f 1 1 1 1 1 1 1 1 1 1 1 f . . . 
-        . f 1 1 1 1 1 1 1 1 1 1 f . . . 
-        . f 1 1 1 1 1 1 1 1 1 f . . . . 
-        . . f 1 1 1 1 1 1 1 1 f . . . . 
-        . . . f 1 1 1 1 1 1 1 f . . . . 
-        . . . . f 1 1 1 1 1 1 1 f f . . 
-        . . . . . f 1 1 1 f 1 1 1 f f . 
-        . . . . . f 1 1 f . f f 1 1 1 f 
-        . . . . . . f 1 f . . . f f 1 f 
-        . . . . . . . f . . . . . . f f 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        `, SpriteKind.NPC);
+    Cursor = sprites.create(cursorIMG, SpriteKind.NPC);
     Cursor.setPosition(75, 108);
     controller.moveSprite(Cursor);
 
