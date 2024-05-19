@@ -146,14 +146,14 @@ function Level1Screen () {
     TheBirds()
 }
 function TheBirds () {
-    mySprite2 = sprites.create(, SpriteKind.Enemy)
+    mySprite2 = sprites.create(birdBadIMG, SpriteKind.Enemy)
     mySprite2.x = 190
     mySprite2.y = 56
     mySprite2.follow(Hero, 25)
     statusbar = statusbars.create(20, 4, StatusBarKind.EnemyHealth)
     statusbar.attachToSprite(mySprite2)
     scaling.scaleToPixels(mySprite2, 40, ScaleDirection.Uniformly, ScaleAnchor.Middle)
-    mySprite3 = sprites.create(, SpriteKind.NPC)
+    mySprite3 = sprites.create(birdMaleIMG, SpriteKind.NPC)
     scaling.scaleToPixels(mySprite3, 28, ScaleDirection.Uniformly, ScaleAnchor.Middle)
     mySprite3.setPosition(112, 116)
     characterAnimations.runFrames(
@@ -426,7 +426,7 @@ function TheBirds () {
     500,
     characterAnimations.rule(Predicate.NotMoving)
     )
-    mySprite4 = sprites.create(, SpriteKind.NPC)
+    mySprite4 = sprites.create(birdFemaleIMG, SpriteKind.NPC)
     characterAnimations.loopFrames(
     mySprite4,
     [img`
