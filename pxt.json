@@ -15,6 +15,7 @@
     "files": [
         "main.blocks",
         "img/cursor.ts",
+        "img/playBtn.ts",
         "main.ts",
         "ShootHandler.ts",
         "StartScreen.ts",

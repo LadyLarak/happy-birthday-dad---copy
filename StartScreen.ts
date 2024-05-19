@@ -126,40 +126,7 @@ function StartScreen() {
         3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
         3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
         `);
-    Play = sprites.create(img`
-        ffffffffffbffffffffffffffffffffffffffffffffffff3ffffffffffffff
-        ffffffffffffff3fff3ffffffffffbfffffffff3ffff3f3f3fffffffffbfff
-        ffffff3ffffffffff333fffffffffffffffffffffffffff3ffffffffffffff
-        fff3ffffffffffffff3ffff3fffbfff3fffffffffffffffffff3ffffffffff
-        ffffffffffff3fffffffffffffffffffffffffffbffffff3fffffffffffbff
-        fffffffccccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbccccfffffff
-        ffffffcccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbcccffffff
-        fffffcccbbbfffffffbbbbfffbbbbbbbbbbbffbbbbbbbfabbbbbafcccfffff
-        fffbfccbbfffaaaaaafbbbfafbbbbbbbbbbbfffbbbbbbfabbbbbafbccf3fff
-        fffffcbbbfaaaffffafbbbfafbbbbbbbbbbffafbbbbbbfaabbbaafbbc333ff
-        fffffcbbbffaffbfffafbbfafbbbbbbbbbbfaafbbbbbbffabbbaffbbcf3fff
-        fffffbbbbffafbbbffafbbfafbbbbbbbbbffafafbbbbbbfaabaafbbbcfffff
-        fffffbbbbbfafbbbffafbbfafbbbbbbbbbfaffafbbbbbbffabaffbbbcfffff
-        fffffbbbbbfafbbbffafbbfafbbbbbbbbbfaffafbbbbbbffaaaffbbbcfffff
-        fffffbbbbbfafbbffaafbbfafbbbbbbbbbfaffaffbbbbbbffaffbbbbbfffbf
-        fbfffbbbbbfafffffafbbbfafbbbbbbbbffafbfafbbbbbbffaffbbbbbfffff
-        fffffbbbbbfaaaaaaffbbbfafbbbbbbbbfafbbfafbbbbbbbfafbbbbbc3ffff
-        fffffbbbbbfaffffffbbbbfafbbbbbbbbfafbbfaffbbbbbbfafbbbbbbfffff
-        fffffbbbbbfafbbbbbbbbbfafbbbbbbbbfafbbffafbbbbbbfafbbbbbbfffff
-        ff3ffbbbbbfafbbbbbbbbbfafbbbbbbbffafffffafbbbbbbfafbbbbbbfffff
-        fffffbbbbbfafbbbbbbbbbfafbbbbbbbfaaaaaaaaffbbbbbfafbbbbbcfffbf
-        fffffbbbbbfafbbbbbbbbbfafbbbbbbbfafffffffafbbbbbfafbbbbbbffbfb
-        fffffcbbbbfafbbbbbbbbbfafbbbbbbbfafbbbbbfafbbbbbfafbbbbbcfffbf
-        fffffcbbbbfafbbbbbbbbbfafffffbbfaffbbbbbfaffbbbbfafbbbbbcfffff
-        fffffccbbbfffbbbbbbbbbfaaaaafbbfaffbbbbbffafbbbbfafbbbbccf3fff
-        f3fffcccbbfffbbbbbbbbbfffffffbbfffbbbbbbbfffbbbbfffbbbcccfffff
-        ffffffccccccccccccccccccccccccccccccccccccccccccccccccccffffff
-        fffffffccccccccccccccccccccccccccccccccccccccccccccccccfffffff
-        ffffffffffff3ffffffffffffffffffffffffffffffffffffff3ffffffffff
-        ffffffffbff333ffffffbffffff3fffffffffffffff3ffffffffffffffffbf
-        ffffffffffff3ffffffbfbffff333ffff3ffffffbfffffbfffffffff3fffff
-        ffffffffffffffffffffbffffff3ffffffffffffffffffffffffffffffffff
-        `, SpriteKind.NPC);
+    Play = sprites.create(playBtnIMG, SpriteKind.NPC);
     Cursor = sprites.create(cursorIMG, SpriteKind.NPC);
     Cursor.setPosition(75, 108);
     controller.moveSprite(Cursor);
