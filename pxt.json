@@ -18,6 +18,7 @@
         "img/playBtn.ts",
         "img/startScreen.ts",
         "img/bombs.ts",
+        "img/birds.ts",
         "main.ts",
         "ShootHandler.ts",
         "StartScreen.ts",
