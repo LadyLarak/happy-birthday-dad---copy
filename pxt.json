@@ -20,6 +20,7 @@
         "img/bombs.ts",
         "img/birds.ts",
         "img/level1Screen.ts",
+        "img/level2Screen.ts",
         "main.ts",
         "ShootHandler.ts",
         "StartScreen.ts",
