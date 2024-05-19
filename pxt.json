@@ -17,6 +17,7 @@
         "img/cursor.ts",
         "img/playBtn.ts",
         "img/startScreen.ts",
+        "img/bombs.ts",
         "main.ts",
         "ShootHandler.ts",
         "StartScreen.ts",
