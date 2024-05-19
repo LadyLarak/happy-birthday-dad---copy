@@ -22,6 +22,7 @@
         "img/level1Screen.ts",
         "img/level2Screen.ts",
         "img/level3Screen.ts",
+        "img/laser.ts",
         "main.ts",
         "ShootHandler.ts",
         "StartScreen.ts",
