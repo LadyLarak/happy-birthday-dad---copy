@@ -21,6 +21,7 @@
         "img/birds.ts",
         "img/level1Screen.ts",
         "img/level2Screen.ts",
+        "img/level3Screen.ts",
         "main.ts",
         "ShootHandler.ts",
         "StartScreen.ts",
