@@ -1055,7 +1055,7 @@ scene.onOverlapTile(SpriteKind.Player, myTiles.tile27, function (sprite, locatio
     music.play(music.melodyPlayable(music.knock), music.PlaybackMode.UntilDone)
     Laser1 = sprites.create(laserRedIMG, SpriteKind.Annoying)
     Laser1.x = 296
-    Laser1.y = 208
+    Laser1.y = 180
     sprites.destroyAllSpritesOfKind(SpriteKind.AnnoyingMuch)
 })
 statusbars.onZero(StatusBarKind.EnemyHealth, function (status) {
@@ -1173,7 +1173,7 @@ function Laser () {
         ......2312......
         `, SpriteKind.Annoying)
     Laser1.x = 290
-    Laser1.y = 208
+    Laser1.y = 180
     Laser2 = sprites.create(laserYellowIMG, SpriteKind.AnnoyingMuch)
     Laser2.x = 248
     Laser2.y = 32
@@ -1515,7 +1515,7 @@ function TheFish () {
     100,
     characterAnimations.rule(Predicate.MovingLeft)
     )
-    statusbar3 = statusbars.create(15, 4, StatusBarKind.EnemyHealth)
+    statusbar3 = statusbars.create(12, 4, StatusBarKind.EnemyHealth)
     statusbar3.attachToSprite(S2)
     S2.follow(Hero, 60)
     S4 = sprites.create(img`
@@ -1685,7 +1685,7 @@ function TheFish () {
     characterAnimations.rule(Predicate.MovingLeft)
     )
     S4.follow(Hero, 60)
-    statusbar2 = statusbars.create(15, 4, StatusBarKind.EnemyHealth)
+    statusbar2 = statusbars.create(12, 4, StatusBarKind.EnemyHealth)
     statusbar2.attachToSprite(S4)
 }
 function Level2Screen () {
@@ -1950,7 +1950,7 @@ scene.onOverlapTile(SpriteKind.Player, myTiles.tile29, function (sprite, locatio
 })
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, otherSprite) {
     if (otherSprite == (Fish || (S2 || S4))) {
-        HealthMalus = -15
+        HealthMalus = -18
     } else {
         HealthMalus = -3
     }
