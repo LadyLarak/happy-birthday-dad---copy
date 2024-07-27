@@ -1950,7 +1950,7 @@ scene.onOverlapTile(SpriteKind.Player, myTiles.tile29, function (sprite, locatio
     sprites.destroyAllSpritesOfKind(SpriteKind.Annoying)
 })
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, otherSprite) {
-    if (otherSprite == (Fish || (S2 || S4))) {
+    if (otherSprite == Fish || otherSprite == S2 || otherSprite == S4) {
         HealthMalus = -15
     } else {
         HealthMalus = -3
