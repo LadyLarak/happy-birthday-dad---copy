@@ -21,7 +21,7 @@ function Level1Screen () {
     scene.setBackgroundImage(level1ScreenIMG)
     tiles.setCurrentTilemap(tilemap`Level1`)
     
-    CreateHero()
+    CreateHero();
     TheBirds()
 }
 function TheBirds () {
@@ -1691,6 +1691,8 @@ function TheFish () {
 function Level2Screen () {
     scene.setBackgroundImage(level2ScreenIMG)
     tiles.setCurrentTilemap(tilemap`Level3`)
+    // todo: create hero once for all
+    CreateHero();
     Hero.x = 8
     Hero.y = 310
     sprites.destroy(mySprite2, effects.none, 1)
