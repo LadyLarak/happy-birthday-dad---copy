@@ -1,3 +1,5 @@
+// lets test an commit
+
 namespace SpriteKind {
     export const Bad = SpriteKind.create()
     export const Swarm = SpriteKind.create()
