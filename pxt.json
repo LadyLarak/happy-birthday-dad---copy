@@ -25,6 +25,7 @@
         "SpriteKind/Sprites.ts",
         "Level1/level1Screen.img.ts",
         "Level1/Level1Creator.ts",
+        "Level2/Level2Creator.ts",
         "main.ts",
         "ShootHandler.ts",
         "StartScreen.ts",

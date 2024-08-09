@@ -494,4 +494,9 @@ function TheBirds () {
     )
     scaling.scaleToPixels(mySprite4, 28, ScaleDirection.Uniformly, ScaleAnchor.Middle)
     mySprite4.setPosition(36, 53)
+
+    scene.onOverlapTile(SpriteKind.Player, myTiles.tile6, function (sprite, location) {
+        Level2Screen()
+    })
+
 }
