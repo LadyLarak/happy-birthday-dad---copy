@@ -26,7 +26,7 @@
         "Level1/level1Screen.img.ts",
         "Level1/Level1Creator.ts",
         "Level2/Level2Creator.ts",
-        "Level3HappyBirthDay",
+        "Level3HappyBirthDay/Level3CreatorHappyBirthDay.ts",
         "main.ts",
         "ShootHandler.ts",
         "StartScreen.ts",
