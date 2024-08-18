@@ -1,5 +1,8 @@
+scene.onOverlapTile(SpriteKind.Player, myTiles.tile8, function (sprite, location) {
+    ScreenFactory("Level3")
+})
 
-function Level2Screen () {
+function Level2Screen() {
     scene.setBackgroundImage(level2ScreenIMG)
     tiles.setCurrentTilemap(tilemap`Level3`)
     CreateHero()
@@ -11,9 +14,9 @@ function Level2Screen () {
     TheFish()
     Laser()
 
-    
-function CreatShark1 () {
-    Shark1 = sprites.create(img`
+
+    function CreatShark1() {
+        Shark1 = sprites.create(img`
         ....................................
         .................ccff...............
         ................cdbcf...............
@@ -31,11 +34,11 @@ function CreatShark1 () {
         ..............ccfbdbbfc..........fff
         .................fffff..............
         `, SpriteKind.Enemy)
-    Shark1.setPosition(50, 25)
-    Shark1.follow(Hero, 25)
-    characterAnimations.loopFrames(
-    Shark1,
-    [img`
+        Shark1.setPosition(50, 25)
+        Shark1.follow(Hero, 25)
+        characterAnimations.loopFrames(
+            Shark1,
+            [img`
         .................ccfff..............
         ................cddbbf..............
         ...............cddbbf...............
@@ -52,7 +55,7 @@ function CreatShark1 () {
         .........ff1111fbdbbfddcc........fff
         ...........cccccfbdbbfc.............
         .................fffff..............
-        `,img`
+        `, img`
         .................ccfff..............
         ................cddbbf..............
         ...............cddbbf...............
@@ -69,7 +72,7 @@ function CreatShark1 () {
         ...........ccc1fbdbbfddcc.......fbbf
         ..............ccfbdbbfc..........fff
         .................fffff..............
-        `,img`
+        `, img`
         ..................ccfff.............
         .................cddbbf.............
         ........fffffffffddbbf..............
@@ -86,7 +89,7 @@ function CreatShark1 () {
         ..............cffbdbbfdddcc.....fbbf
         .................fbdbbfcc........fff
         ..................fffff.............
-        `,img`
+        `, img`
         ....................ccfff...........
         ..........fffffffffcbbbbf...........
         .........fbbbbbbbbbfffbf............
@@ -103,7 +106,7 @@ function CreatShark1 () {
         .............cccffbdbbfdddc....fbbf.
         ..................fbdbbfcc......fbbf
         ...................fffff.........fff
-        `,img`
+        `, img`
         ...........fffffff...ccfff..........
         ..........fbbbbbbbffcbbbbf..........
         ..........fbb111bbbbbffbf...........
@@ -120,7 +123,7 @@ function CreatShark1 () {
         ............cc1111fbdbbfdddc...fbbf.
         ..............cccfffbdbbfcc.....fbbf
         ....................fffff........fff
-        `,img`
+        `, img`
         ....................................
         ....................................
         ....................................
@@ -138,12 +141,12 @@ function CreatShark1 () {
         ........ccccccfbdbbbfcc..........fff
         ...............ffffff...............
         `],
-    500,
-    characterAnimations.rule(Predicate.MovingLeft)
-    )
-    characterAnimations.loopFrames(
-    Shark1,
-    [img`
+            500,
+            characterAnimations.rule(Predicate.MovingLeft)
+        )
+        characterAnimations.loopFrames(
+            Shark1,
+            [img`
         ..............fffcc.................
         ..............fbbddc................
         ...............fbbddc...............
@@ -160,7 +163,7 @@ function CreatShark1 () {
         fff........ccddfbbdbf1111ff.........
         .............cfbbdbfccccc...........
         ..............fffff.................
-        `,img`
+        `, img`
         ..............fffcc.................
         ..............fbbddc................
         ...............fbbddc...............
@@ -177,7 +180,7 @@ function CreatShark1 () {
         fbbf.......ccddfbbdbf1ccc...........
         fff..........cfbbdbfcc..............
         ..............fffff.................
-        `,img`
+        `, img`
         .............fffcc..................
         .............fbbddc.................
         ..............fbbddfffffffff........
@@ -194,7 +197,7 @@ function CreatShark1 () {
         fbbf.....ccdddfbbdbffc..............
         fff........ccfbbdbf.................
         .............fffff..................
-        `,img`
+        `, img`
         ...........fffcc....................
         ...........fbbbbcfffffffff..........
         ............fbfffbbbbbbbbbf.........
@@ -211,7 +214,7 @@ function CreatShark1 () {
         .fbbf....cdddfbbdbffccc.............
         fbbf......ccfbbdbf..................
         fff.........fffff...................
-        `,img`
+        `, img`
         ..........fffcc...fffffff...........
         ..........fbbbbcffbbbbbbbf..........
         ...........fbffbbbbb111bbf..........
@@ -228,7 +231,7 @@ function CreatShark1 () {
         .fbbf...cdddfbbdbf1111cc............
         fbbf.....ccfbbdbfffccc..............
         fff........fffff....................
-        `,img`
+        `, img`
         ....................................
         ....................................
         ....................................
@@ -246,16 +249,16 @@ function CreatShark1 () {
         fff..........ccfbbbdbfcccccc........
         ...............ffffff...............
         `],
-    500,
-    characterAnimations.rule(Predicate.MovingRight)
-    )
-    statusbar5 = statusbars.create(20, 4, StatusBarKind.EnemyHealth)
-    statusbar5.attachToSprite(Shark1, 0, 0)
-}
-    
-    
-function TheFish () {
-    Fish = sprites.create(img`
+            500,
+            characterAnimations.rule(Predicate.MovingRight)
+        )
+        statusbar5 = statusbars.create(20, 4, StatusBarKind.EnemyHealth)
+        statusbar5.attachToSprite(Shark1, 0, 0)
+    }
+
+
+    function TheFish() {
+        Fish = sprites.create(img`
         . . . . . . . . 2 2 2 2 2 . . . 
         . . . . . . 2 2 5 5 5 5 5 2 . . 
         . . . . . 2 5 5 5 5 5 5 5 5 2 . 
@@ -273,9 +276,9 @@ function TheFish () {
         . . . . . . . . f f f f f f . . 
         . . . . . . . . . . . . . . . . 
         `, SpriteKind.Enemy)
-    characterAnimations.loopFrames(
-    Fish,
-    [img`
+        characterAnimations.loopFrames(
+            Fish,
+            [img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . 2 2 2 2 2 2 . . . 
         . . . . . . 2 5 5 5 5 5 2 2 . . 
@@ -292,7 +295,7 @@ function TheFish () {
         f f f f f 4 4 4 3 3 5 5 5 f . . 
         . . . . . f f f 5 5 5 5 5 f . . 
         . . . . . . . . f f f f f f . . 
-        `,img`
+        `, img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . 2 2 2 2 2 . . . 
         . . . . . . 2 2 5 5 5 5 5 2 . . 
@@ -309,7 +312,7 @@ function TheFish () {
         . . . f f 4 4 4 3 3 3 5 5 f . . 
         . . . . . f f f 5 5 5 5 5 f . . 
         . . . . . . . . f f f f f f . . 
-        `,img`
+        `, img`
         . . . . . . . . . 2 2 2 2 2 . . 
         . . . . . . 2 2 2 5 5 5 5 2 2 . 
         . . . . 2 2 5 5 5 5 5 5 5 5 2 . 
@@ -326,7 +329,7 @@ function TheFish () {
         . . . . . . f 5 5 5 5 5 f . . . 
         . . . . . . . f f f f f f . . . 
         . . . . . . . . . . . . . . . . 
-        `,img`
+        `, img`
         . . . . . . . . 2 2 2 2 2 . . . 
         . . . . . . 2 2 5 5 5 5 5 2 . . 
         . . . . . 2 5 5 5 5 5 5 5 5 2 . 
@@ -344,12 +347,12 @@ function TheFish () {
         . . . . . . . . f f f f f f . . 
         . . . . . . . . . . . . . . . . 
         `],
-    100,
-    characterAnimations.rule(Predicate.MovingLeft)
-    )
-    characterAnimations.loopFrames(
-    Fish,
-    [img`
+            100,
+            characterAnimations.rule(Predicate.MovingLeft)
+        )
+        characterAnimations.loopFrames(
+            Fish,
+            [img`
         . . . . . . . . . . . . . . . . 
         . . . 2 2 2 2 2 2 . . . . . . . 
         . . 2 2 5 5 5 5 5 2 . . . . . . 
@@ -366,7 +369,7 @@ function TheFish () {
         . . f 5 5 5 3 3 4 4 4 f f f f f 
         . . f 5 5 5 5 5 f f f . . . . . 
         . . f f f f f f . . . . . . . . 
-        `,img`
+        `, img`
         . . . . . . . . . . . . . . . . 
         . . . 2 2 2 2 2 . . . . . . . . 
         . . 2 5 5 5 5 5 2 2 . . . . . . 
@@ -383,7 +386,7 @@ function TheFish () {
         . . f 5 5 3 3 3 4 4 4 f f . . . 
         . . f 5 5 5 5 5 f f f . . . . . 
         . . f f f f f f . . . . . . . . 
-        `,img`
+        `, img`
         . . 2 2 2 2 2 . . . . . . . . . 
         . 2 2 5 5 5 5 2 2 2 . . . . . . 
         . 2 5 5 5 5 5 5 5 5 2 2 . . . . 
@@ -400,7 +403,7 @@ function TheFish () {
         . . . f 5 5 5 5 5 f . . . . . . 
         . . . f f f f f f . . . . . . . 
         . . . . . . . . . . . . . . . . 
-        `,img`
+        `, img`
         . . . 2 2 2 2 2 . . . . . . . . 
         . . 2 5 5 5 5 5 2 2 . . . . . . 
         . 2 5 5 5 5 5 5 5 5 2 . . . . . 
@@ -418,14 +421,14 @@ function TheFish () {
         . . f f f f f f . . . . . . . . 
         . . . . . . . . . . . . . . . . 
         `],
-    100,
-    characterAnimations.rule(Predicate.MovingRight)
-    )
-    Fish.follow(Hero, 60)
-    Fish.setPosition(46, 115)
-    statusbar4 = statusbars.create(15, 4, StatusBarKind.EnemyHealth)
-    statusbar4.attachToSprite(Fish)
-    S2 = sprites.create(img`
+            100,
+            characterAnimations.rule(Predicate.MovingRight)
+        )
+        Fish.follow(Hero, 60)
+        Fish.setPosition(46, 115)
+        statusbar4 = statusbars.create(15, 4, StatusBarKind.EnemyHealth)
+        statusbar4.attachToSprite(Fish)
+        S2 = sprites.create(img`
         . . f f f . . . . . . . . f f f 
         . f f c c . . . . . . f c b b c 
         f f c c . . . . . . f c b b c . 
@@ -443,9 +446,9 @@ function TheFish () {
         . . f b b b b b b c f . . . . . 
         . . . f f f f f f f . . . . . . 
         `, SpriteKind.Enemy)
-    characterAnimations.loopFrames(
-    S2,
-    [img`
+        characterAnimations.loopFrames(
+            S2,
+            [img`
         f f f . . . . . . . . f f f . . 
         c b b c f . . . . . . c c f f . 
         . c b b c f . . . . . . c c f f 
@@ -462,7 +465,7 @@ function TheFish () {
         . . . . f c b b b b 2 2 2 2 f . 
         . . . . . f c b b b b b b f . . 
         . . . . . . f f f f f f f . . . 
-        `,img`
+        `, img`
         . . . . . . . . . . . f f f . . 
         f f f . . . . . . . . c c f f f 
         c b b c f . . . c c . c c c f f 
@@ -479,7 +482,7 @@ function TheFish () {
         . . . . . f c b b b 2 2 2 f . . 
         . . . . . . f f f f f f f . . . 
         . . . . . . . . . . . . . . . . 
-        `,img`
+        `, img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
         . . . . . . . . c c . c c . . . 
@@ -496,7 +499,7 @@ function TheFish () {
         . . c b b c c f f b 2 2 2 f . . 
         . c c c c c f f f f f f f . . . 
         c c c c . . . . . . . . . . . . 
-        `,img`
+        `, img`
         . f f f . . . . . . . . f f f . 
         . c b b c f . . . . . . . c f f 
         . . c b b c f . . . . . . c c f 
@@ -514,12 +517,12 @@ function TheFish () {
         . . . . . f c b b b b b b f . . 
         . . . . . . f f f f f f f . . . 
         `],
-    100,
-    characterAnimations.rule(Predicate.MovingRight)
-    )
-    characterAnimations.loopFrames(
-    S2,
-    [img`
+            100,
+            characterAnimations.rule(Predicate.MovingRight)
+        )
+        characterAnimations.loopFrames(
+            S2,
+            [img`
         . . f f f . . . . . . . . f f f 
         . f f c c . . . . . . f c b b c 
         f f c c . . . . . . f c b b c . 
@@ -536,7 +539,7 @@ function TheFish () {
         . f 2 2 2 2 b b b b c f . . . . 
         . . f b b b b b b c f . . . . . 
         . . . f f f f f f f . . . . . . 
-        `,img`
+        `, img`
         . . f f f . . . . . . . . . . . 
         f f f c c . . . . . . . . f f f 
         f f c c c . c c . . . f c b b c 
@@ -553,7 +556,7 @@ function TheFish () {
         . . f 2 2 2 b b b c f . . . . . 
         . . . f f f f f f f . . . . . . 
         . . . . . . . . . . . . . . . . 
-        `,img`
+        `, img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
         . . . c c . c c . . . . . . . . 
@@ -570,7 +573,7 @@ function TheFish () {
         . . f 2 2 2 b f f c c b b c . . 
         . . . f f f f f f f c c c c c . 
         . . . . . . . . . . . . c c c c 
-        `,img`
+        `, img`
         . f f f . . . . . . . . f f f . 
         f f c . . . . . . . f c b b c . 
         f c c . . . . . . f c b b c . . 
@@ -588,13 +591,13 @@ function TheFish () {
         . . f b b b b b b c f . . . . . 
         . . . f f f f f f f . . . . . . 
         `],
-    100,
-    characterAnimations.rule(Predicate.MovingLeft)
-    )
-    statusbar3 = statusbars.create(12, 4, StatusBarKind.EnemyHealth)
-    statusbar3.attachToSprite(S2)
-    S2.follow(Hero, 60)
-    S4 = sprites.create(img`
+            100,
+            characterAnimations.rule(Predicate.MovingLeft)
+        )
+        statusbar3 = statusbars.create(12, 4, StatusBarKind.EnemyHealth)
+        statusbar3.attachToSprite(S2)
+        S2.follow(Hero, 60)
+        S4 = sprites.create(img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . c c c c . . . . 
         . . . . c c c c 2 2 2 2 c . . . 
@@ -612,9 +615,9 @@ function TheFish () {
         . . f c b 7 b c c b b f f f f . 
         . . f f f f f c b b b f . . . . 
         `, SpriteKind.Enemy)
-    characterAnimations.loopFrames(
-    S4,
-    [img`
+        characterAnimations.loopFrames(
+            S4,
+            [img`
         . . . . c c c c . . . . . . . . 
         . . . c 2 2 2 2 c c c c . . . . 
         . . c c 2 2 2 2 2 1 1 c c f f . 
@@ -631,7 +634,7 @@ function TheFish () {
         . f f f f b b c c b 7 b f . . . 
         . . . . c c c c f c c f f . . . 
         . . . . . . . f f c c c f . . . 
-        `,img`
+        `, img`
         . . . . . . . . . . . . . . . . 
         . . . . c c c c . . . . . . . . 
         . . . c 2 2 2 2 c c c c . . . . 
@@ -648,7 +651,7 @@ function TheFish () {
         f f c c f f f f b b f 7 b f . . 
         . f f f f f f b b f f b f . . . 
         . . . . . . f f f f f f . . . . 
-        `,img`
+        `, img`
         . . . . . . . . . . . . . . . . 
         . . . . c c c c . . . . . . . . 
         . . . c 2 2 2 2 c c c c . . . . 
@@ -665,7 +668,7 @@ function TheFish () {
         f f c c f f f c b b 7 7 b f . . 
         . f f f f b b c c b 7 b c f . . 
         . . . . f b b b c f f f f f . . 
-        `,img`
+        `, img`
         . . . . c c c c . . . . . . . . 
         . . . c 2 2 2 2 c c c c . . . . 
         . . c c 2 2 2 2 2 1 1 c c f f . 
@@ -683,12 +686,12 @@ function TheFish () {
         . . f c b b c f f f f c c f f . 
         . . f b b b c . . f f c c c f . 
         `],
-    100,
-    characterAnimations.rule(Predicate.MovingRight)
-    )
-    characterAnimations.loopFrames(
-    S4,
-    [img`
+            100,
+            characterAnimations.rule(Predicate.MovingRight)
+        )
+        characterAnimations.loopFrames(
+            S4,
+            [img`
         . . . . . . . . c c c c . . . . 
         . . . . c c c c 2 2 2 2 c . . . 
         . f f c c 1 1 2 2 2 2 2 c c . . 
@@ -705,7 +708,7 @@ function TheFish () {
         . . . f b 7 b f f b b f f f f . 
         . . . f f c c f f f f f . . . . 
         . . . f c c c f f . . . . . . . 
-        `,img`
+        `, img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . c c c c . . . . 
         . . . . c c c c 2 2 2 2 c . . . 
@@ -722,7 +725,7 @@ function TheFish () {
         . . f b 7 f b b f f f f c c f f 
         . . . f b f f b b f f f f f f . 
         . . . . f f f f f f . . . . . . 
-        `,img`
+        `, img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . c c c c . . . . 
         . . . . c c c c 2 2 2 2 c . . . 
@@ -739,7 +742,7 @@ function TheFish () {
         . . c b 7 7 b b f f f f c c f f 
         . . f c b 7 b f f b b f f f f . 
         . . f f f f f f b b b f . . . . 
-        `,img`
+        `, img`
         . . . . . . . . c c c c . . . . 
         . . . . c c c c 2 2 2 2 c . . . 
         . f f c c 1 1 2 2 2 2 2 c c . . 
@@ -757,17 +760,17 @@ function TheFish () {
         . f f b b f f f f f b b f f . . 
         . f b b b f f . . f b b b f . . 
         `],
-    100,
-    characterAnimations.rule(Predicate.MovingLeft)
-    )
-    S4.follow(Hero, 60)
-    statusbar2 = statusbars.create(12, 4, StatusBarKind.EnemyHealth)
-    statusbar2.attachToSprite(S4)
-}
+            100,
+            characterAnimations.rule(Predicate.MovingLeft)
+        )
+        S4.follow(Hero, 60)
+        statusbar2 = statusbars.create(12, 4, StatusBarKind.EnemyHealth)
+        statusbar2.attachToSprite(S4)
+    }
 
-    
-function Laser () {
-    Laser1 = sprites.create(img`
+
+    function Laser() {
+        Laser1 = sprites.create(img`
         ......2332......
         ......2312......
         ......2112......
@@ -865,17 +868,17 @@ function Laser () {
         ......2332......
         ......2312......
         `, SpriteKind.Annoying)
-    Laser1.x = 290
-    Laser1.y = 180
-    Laser2 = sprites.create(laserYellowIMG, SpriteKind.AnnoyingMuch)
-    Laser2.x = 248
-    Laser2.y = 32
-}
+        Laser1.x = 290
+        Laser1.y = 180
+        Laser2 = sprites.create(laserYellowIMG, SpriteKind.AnnoyingMuch)
+        Laser2.x = 248
+        Laser2.y = 32
+    }
 
 
-scene.onOverlapTile(SpriteKind.Player, myTiles.tile29, function (sprite, location) {
-    music.play(music.melodyPlayable(music.thump), music.PlaybackMode.UntilDone)
-    Laser2 = sprites.create(img`
+    scene.onOverlapTile(SpriteKind.Player, myTiles.tile29, function (sprite, location) {
+        music.play(music.melodyPlayable(music.thump), music.PlaybackMode.UntilDone)
+        Laser2 = sprites.create(img`
         ......5dd5......
         ......5d15......
         ......5115......
@@ -973,12 +976,12 @@ scene.onOverlapTile(SpriteKind.Player, myTiles.tile29, function (sprite, locatio
         ......5dd5......
         ......5d15......
         `, SpriteKind.AnnoyingMuch)
-    Laser2.x = 248
-    Laser2.y = 32
-    sprites.destroyAllSpritesOfKind(SpriteKind.Annoying)
-})    
-    
-    
+        Laser2.x = 248
+        Laser2.y = 32
+        sprites.destroyAllSpritesOfKind(SpriteKind.Annoying)
+    })
+
+
 }
 
 scene.onOverlapTile(SpriteKind.Player, myTiles.tile27, function (sprite, location) {

@@ -496,7 +496,7 @@ function TheBirds () {
     mySprite4.setPosition(36, 53)
 
     scene.onOverlapTile(SpriteKind.Player, myTiles.tile6, function (sprite, location) {
-        Level2Screen()
+        ScreenFactory('Level2')
     })
 
 }
