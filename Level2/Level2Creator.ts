@@ -876,7 +876,7 @@ function Level2Screen() {
     }
 
 
-    scene.onOverlapTile(SpriteKind.Player, myTiles.tile25, function (sprite, location) {
+    scene.onOverlapTile(SpriteKind.Player, myTiles.tile29, function (sprite, location) {
         music.play(music.melodyPlayable(music.thump), music.PlaybackMode.UntilDone)
         Laser2 = sprites.create(img`
         ......5dd5......
@@ -981,14 +981,14 @@ function Level2Screen() {
         sprites.destroyAllSpritesOfKind(SpriteKind.Annoying)
     })
 
-    scene.onOverlapTile(SpriteKind.Player, myTiles.tile27, function (sprite, location) {
-        music.play(music.melodyPlayable(music.knock), music.PlaybackMode.UntilDone)
-        Laser1 = sprites.create(laserRedIMG, SpriteKind.Annoying)
-            Laser1.x = 290
-            Laser1.y = 180
-        sprites.destroyAllSpritesOfKind(SpriteKind.AnnoyingMuch)
-    })
+    
 }
 
-
+scene.onOverlapTile(SpriteKind.Player, myTiles.tile27, function (sprite, location) {
+    music.play(music.melodyPlayable(music.knock), music.PlaybackMode.UntilDone)
+    Laser1 = sprites.create(laserRedIMG, SpriteKind.Annoying)
+        Laser1.x = 296
+        Laser1.y = 180
+    sprites.destroyAllSpritesOfKind(SpriteKind.AnnoyingMuch)
+})
 
