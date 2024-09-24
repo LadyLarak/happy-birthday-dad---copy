@@ -6,5 +6,13 @@
         "namespace": "myImages.",
         "mimeType": "image/x-mkcd-f4",
         "displayName": "Continuebutton"
+    },
+    "anim1": {
+        "id": "anim1",
+        "data": "ZjQwMTEwMDAxMDAwMDIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZmZmZmZmZmYwMDAwMDBmMDIyMTIxMTExMGYwMDAwMmYyMjIyMzMxM2YxMDBmMDIyMjIyMjIyMzIyMTBmZmYyMjIyMjIyMjIyMjJmZmJmZmZmZmZmZmZmZmZmZjJjZmJiYmIyYjIyMjIyMmYyY2ZjY2NjYmJiYjIyMjJmMmZmZmZmZmZmZmZmZmZmZmYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZmZmZmZmZmYwMDAwMDBmMDIyMTIxMTExMGYwMGZmMmYyMjIyMzMxM2YxZmZiZmZmZmZmZmZmZmZmZmYyY2ZiYmJiMmIyMjIyMjJmMmNmY2NjY2JiYmIyMjIyZjJmZmZmZmZmZmZmZmZmZmZm",
+        "dataEncoding": "base64",
+        "namespace": "myAnimations.",
+        "mimeType": "application/mkcd-animation",
+        "displayName": "redklick"
     }
 }
