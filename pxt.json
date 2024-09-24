@@ -22,6 +22,7 @@
         "img/level2Screen.ts",
         "img/level3Screen.ts",
         "img/laser.ts",
+        "img/redBtn.ts",
         "SpriteKind/Sprites.ts",
         "Level1/level1Screen.img.ts",
         "Level1/Level1Creator.ts",

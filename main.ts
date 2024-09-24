@@ -229,8 +229,7 @@ let statusbar3: StatusBarSprite = null
 let S2: Sprite = null
 let statusbar4: StatusBarSprite = null
 let Fish: Sprite = null
-let Laser2: Sprite = null
-let Laser1: Sprite = null
+
 let statusbar5: StatusBarSprite = null
 let Shark1: Sprite = null
 

@@ -767,7 +767,6 @@ function Level2Screen() {
         statusbar2 = statusbars.create(12, 4, StatusBarKind.EnemyHealth)
         statusbar2.attachToSprite(S4)
     }
-
-
     
+   
 }

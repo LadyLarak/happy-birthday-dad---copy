@@ -1,5 +1,13 @@
+let Laser2: Sprite = null
+let Laser1: Sprite = null
+let RedBtn: Sprite = null
 
 function Laser() {
+    RedBtn = sprites.create(redbuttonUp, SpriteKind.colouredButton)
+    RedBtn.x = 0
+    RedBtn.y = 300
+
+
     Laser1 = sprites.create(laserRedIMG, SpriteKind.Annoying)
     Laser1.x = 296
     Laser1.y = 180
