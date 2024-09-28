@@ -7,6 +7,14 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "Continuebutton"
     },
+    "myImages.image2": {
+        "id": "myImages.image2",
+        "data": "hwQQABAAAAAAAAAAAPD//wAAAAAA8Mv8AAAAAADwv/wAAAAAAC+//AAAAADwIr/8AAAAAPAiv/wAAAAA8CK/+wAAAADwIS/7AAAAAPAxL/sAAAAA8DEv+wAAAADwMS/yAAAAAPARL/IAAAAAAB8v8gAAAAAA8C/yAAAAAADwIvIAAAAAAPD//w==",
+        "dataEncoding": "base64",
+        "namespace": "myImages.",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "redBtnDown"
+    },
     "anim1": {
         "id": "anim1",
         "data": "ZjQwMTEwMDAxMDAwMDIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZmZmZmZmZmYwMDAwMDBmMDIyMTIxMTExMGYwMDAwMmYyMjIyMzMxM2YxMDBmMDIyMjIyMjIyMzIyMTBmZmYyMjIyMjIyMjIyMjJmZmJmZmZmZmZmZmZmZmZmZjJjZmJiYmIyYjIyMjIyMmYyY2ZjY2NjYmJiYjIyMjJmMmZmZmZmZmZmZmZmZmZmZmYwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwZmZmZmZmZmYwMDAwMDBmMDIyMTIxMTExMGYwMGZmMmYyMjIyMzMxM2YxZmZiZmZmZmZmZmZmZmZmZmYyY2ZiYmJiMmIyMjIyMjJmMmNmY2NjY2JiYmIyMjIyZjJmZmZmZmZmZmZmZmZmZmZm",

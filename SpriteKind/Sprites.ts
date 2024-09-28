@@ -11,5 +11,5 @@ namespace SpriteKind {
     export const Button = SpriteKind.create()
     export const S = SpriteKind.create()
     export const NPC = SpriteKind.create()
-    export const colouredButton = SpriteKind.create()
+    export const redColouredButton = SpriteKind.create()
 }

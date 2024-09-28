@@ -1,61 +1,35 @@
 let Laser2: Sprite = null
 let Laser1: Sprite = null
-let RedBtn: Sprite = null
+let RedBtn: StatefulButton = null
 
 function Laser() {
-    RedBtn = sprites.create(redbuttonUp, SpriteKind.colouredButton)
-    RedBtn.x = 72
-    RedBtn.y = 315
+    RedBtn = createBtn(redBtnUp, 'up')
+    RedBtn.sprite.x = 72
+    RedBtn.sprite.y = 315
 
-    sprites.onOverlap(SpriteKind.Player, SpriteKind.colouredButton, function (sprite, otherSprite) {
-        characterAnimations.runFrames(
-            RedBtn,
-            [ img`
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . f f f f f f f f . . . . 
-    . . . f 2 2 2 1 1 1 1 1 f . . . 
-    f f f 2 2 2 2 2 3 3 3 1 1 f f f 
-    f b f f f f f f f f f f f f 2 f 
-    f c b b b b b 2 2 2 2 2 2 2 2 f 
-    f c c c c c b b b b 2 2 2 2 2 f 
-    f f f f f f f f f f f f f f f f 
-    `,img`
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . f f f f f f f f . . . . 
-    . . . f 2 2 2 1 1 1 1 1 f . . . 
-    . . f 2 2 2 2 2 3 3 3 1 1 f . . 
-    . f 2 2 2 2 2 2 2 2 2 3 1 2 f . 
-    f f 2 2 2 2 2 2 2 2 2 2 2 2 f f 
-    f b f f f f f f f f f f f f 2 f 
-    f c b b b b b 2 2 2 2 2 2 2 2 f 
-    f c c c c c b b b b 2 2 2 2 2 f 
-    f f f f f f f f f f f f f f f f 
-    `],
-            400,
-            characterAnimations.rule(Predicate.NotMoving)
-        )
+    sprites.onOverlap(SpriteKind.Player, SpriteKind.redColouredButton, function (sprite, otherSprite) {
 
         console.log("redbutton")
+        // btn is up
+        if (RedBtn.state == 'up') {
+            RedBtn.state = "down"
+            RedBtn.sprite.setImage(redBtnDown)
+        }
+
+        // btn is down
+        else {
+            RedBtn.state = "up"
+            RedBtn.sprite.setImage(redBtnUp)
+        }
         Laser1.x = -100000
         Laser1.y = -100000
         Laser2.x = 248
         Laser2.y = 32
-        
+        pause(1500)
     })
+
+
+    
     
     Laser1 = sprites.create(laserRedIMG, SpriteKind.Annoying)
     Laser1.x = 296
