@@ -1,11 +1,15 @@
 let Laser2: Sprite = null
 let Laser1: Sprite = null
 let RedBtn: StatefulButton = null
+let RedBtn2: StatefulButton = null
 
 function Laser() {
     RedBtn = createBtn(redBtnUp, 'up')
     RedBtn.sprite.x = 72
     RedBtn.sprite.y = 315
+    RedBtn2 = createBtn(redBtnUp, 'up')
+    RedBtn2.sprite.x = 328
+    RedBtn2.sprite.y = 105
 
     sprites.onOverlap(SpriteKind.Player, SpriteKind.redColouredButton, function (sprite, otherSprite) {
 
@@ -26,6 +30,21 @@ function Laser() {
         Laser2.x = 248
         Laser2.y = 32
         pause(1500)
+
+        if (RedBtn2.state == "up") {
+            RedBtn2.state = "down"
+            RedBtn2.sprite.setImage(redBtnDown)
+        }
+
+        else {
+            RedBtn2.state = "up"
+            RedBtn2.sprite.setImage(redBtnUp)
+            Laser1.x = -100000
+            Laser1.y = -100000
+            Laser2.x = 248
+            Laser2.y = 32
+            pause(1500)
+        }
     })
 
 

@@ -10,5 +10,5 @@ function createBtn(img: Image, defaultState: btnState): StatefulButton {
         sprite: sprites.create(img, SpriteKind.redColouredButton),
         state: defaultState    
     }
-     
+      
 }
