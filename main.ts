@@ -24,8 +24,8 @@ function ScreenFactory(Screen: string) {
         Level2Screen()
         Stage = "Game"
     }
-    if (Screen == "Level3") {
-        Level3Screen()
+    if (Screen == "Happy Birth Day") {
+        HappyBirthDayScreen()
         Stage = "Game"
     }
     if (Screen == "GameOver") {
@@ -197,7 +197,7 @@ function ClearScreen () {
     sprites.destroyAllSpritesOfKind(SpriteKind.AnnoyingMuch)
     sprites.destroyAllSpritesOfKind(SpriteKind.Annoying)
 }
-function Level3Screen () {
+function HappyBirthDayScreen () {
     scene.setBackgroundImage(level3ScreenIMG)
     tiles.setCurrentTilemap(tilemap`Level4`)
     CreateHero()
